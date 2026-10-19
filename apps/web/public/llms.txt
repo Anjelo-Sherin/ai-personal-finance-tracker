@@ -1,0 +1,11 @@
+# PaisaPulse — AI Personal Finance Tracker with Smart Categorization
+
+> Day 02 of 30 Projects in 30 Days (Full Stack + NLP + Time-Series Forecasting)
+> Paste a bank SMS or CSV, get categorized spending, anomaly flags, subscription detection, and a monthly forecast.
+
+## Core Capabilities
+- **Regex + Structured Bank SMS & CSV Parser**: Extracts amount (INR/Rs/₹), date, channel (UPI, POS/Card, ACH, NEFT), and clean merchant tokens from noisy strings like `SWIGGY*ORDER 8812` or `UPI/328910421/DR/ZOMATO MEDIA/HDFC`.
+- **Hybrid TF-IDF + Logistic Regression Categorizer**: Combines word (1-2g) and character subword (3-5g) TF-IDF features with balanced Logistic Regression to classify noisy Indian merchant strings into 10 categories with explainable top-token attribution.
+- **Human-in-the-Loop Active Learning**: One-click category corrections in the dashboard retrain the model in <25 ms and automatically reclassify matching merchants.
+- **Rules Engine**: Interval-based recurring subscription detector + robust z-score & median-multiplier anomaly detector.
+- **Prophet-Style Monthly Spend Forecaster**: Decomposes trend, month-start payday spikes (days 1-7), and festival seasonality to predict next-month spend with 80% confidence intervals and actionable savings targets.

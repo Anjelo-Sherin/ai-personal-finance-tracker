@@ -1,0 +1,14 @@
+{
+  "name": "paisapulse",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Day 02 of 30 Projects in 30 Days — AI Personal Finance Tracker with Smart Categorization (Full Stack + NLP + Time-Series Forecasting)",
+  "scripts": {
+    "dev:web": "npm --prefix apps/web run dev",
+    "build:web": "npm --prefix apps/web run build",
+    "start:web": "npm --prefix apps/web run start",
+    "lint:web": "npm --prefix apps/web run lint",
+    "dev:api": "cd apps/api && PYTHONPATH=. .venv/bin/python -m uvicorn app.main:app --reload --port 8001",
+    "test:api": "cd apps/api && PYTHONPATH=. .venv/bin/python -m pytest -v"
+  }
+}
