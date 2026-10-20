@@ -25,12 +25,13 @@ import {
   setStoredToken,
   UserProfile,
 } from "@/lib/api";
+import { INITIAL_DASHBOARD_DATA } from "@/lib/initialData";
 import { API_URL, formatINR } from "@/lib/formatters";
 import { CategoryDonutChart, ForecastTimelineChart } from "@/components/charts/Charts";
 
 export default function FinanceDashboardPage() {
-  const [data, setData] = useState<DashboardPayload | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState<DashboardPayload>(INITIAL_DASHBOARD_DATA);
+  const [loading, setLoading] = useState(false);
   const [activeTab, setActiveTab] = useState<
     "overview" | "transactions" | "radar" | "budgets"
   >("overview");
@@ -254,7 +255,7 @@ export default function FinanceDashboardPage() {
     window.URL.revokeObjectURL(url);
   };
 
-  if (loading || !data) {
+  if (!data) {
     return (
       <div className="max-w-6xl mx-auto px-4 py-16 text-center space-y-3">
         <div className="w-10 h-10 rounded-full border-4 border-primary border-t-transparent animate-spin mx-auto" />

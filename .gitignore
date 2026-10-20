@@ -1,6 +1,12 @@
 # Dependencies
+node_modules
 node_modules/
+.venv
 .venv/
+*/.venv
+*/node_modules
+apps/api/.venv
+apps/web/node_modules
 __pycache__/
 *.py[cod]
 *$py.class
