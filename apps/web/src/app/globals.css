@@ -2,7 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #FFF0F5;
-  color: #4A1A2C;
+@layer base {
+  body {
+    background-color: #FFF2F6;
+    color: #3B1222;
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(216, 27, 96, 0.05) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(244, 143, 177, 0.08) 0px, transparent 50%),
+      radial-gradient(at 50% 50%, rgba(252, 228, 236, 0.25) 0px, transparent 100%);
+    background-attachment: fixed;
+  }
+}
+
+@layer components {
+  .bento-card {
+    background: #FFFFFF;
+    border: 1.5px solid #F3D8E2;
+    border-radius: 24px;
+    box-shadow: 0 4px 20px -2px rgba(74, 26, 44, 0.04), 0 12px 32px -4px rgba(216, 27, 96, 0.06);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .bento-card:hover {
+    border-color: #F48FB1;
+    box-shadow: 0 8px 28px -2px rgba(216, 27, 96, 0.10), 0 18px 40px -4px rgba(74, 26, 44, 0.07);
+  }
+
+  .bento-card-gradient {
+    background: linear-gradient(145deg, #FFFFFF 0%, #FFF5F8 100%);
+    border: 1.5px solid #F3D8E2;
+    border-radius: 24px;
+    box-shadow: 0 4px 20px -2px rgba(74, 26, 44, 0.04), 0 12px 32px -4px rgba(216, 27, 96, 0.06);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .bento-card-gradient:hover {
+    border-color: #F06292;
+    box-shadow: 0 8px 30px -2px rgba(216, 27, 96, 0.12), 0 20px 45px -4px rgba(74, 26, 44, 0.08);
+  }
+
+  .bento-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.3rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    transition: all 0.2s ease;
+  }
 }

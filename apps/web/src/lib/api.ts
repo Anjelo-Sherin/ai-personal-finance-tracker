@@ -32,6 +32,8 @@ export interface TransactionItem {
   is_anomaly: boolean;
   anomaly_score: number;
   anomaly_reason?: string | null;
+  notes?: string | null;
+  created_at?: string | null;
 }
 
 export interface RecurringSubscription {

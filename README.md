@@ -1,24 +1,25 @@
-# PaisaPulse — AI Personal Finance Tracker with Smart Categorization
+# PaisaPulse — AI Personal Finance Tracker with Bento Grid UI
 
 <p align="center">
   <img src="https://img.shields.io/badge/Day%2002-30%20Projects%20in%2030%20Days-pink?style=for-the-badge&logo=rocket" alt="Day 02 Challenge" />
-  <img src="https://img.shields.io/badge/FastAPI-0.111.0-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/UI%20Style-Bento%20Grid-black?style=for-the-badge&logo=vercel" alt="Bento Grid UI" />
+  <img src="https://img.shields.io/badge/FastAPI-0.115.0-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
   <img src="https://img.shields.io/badge/Next.js%2014-App%20Router-black?style=for-the-badge&logo=next.js" alt="Next.js" />
   <img src="https://img.shields.io/badge/scikit--learn-Active%20Learning-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="scikit-learn" />
   <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="MIT License" />
 </p>
 
-> **Day 02 of 30 Projects in 30 Days** · Full Stack + NLP + Time-Series Forecasting  
-> **Paste a bank SMS or CSV, get categorized spending and a monthly forecast.**
+> **Day 02 of 30 Projects in 30 Days** · Full Stack + NLP + Time-Series Forecasting + Bento Grid Design System  
+> **Paste a bank SMS or CSV, get categorized spending and a monthly forecast in a sleek Bento Grid.**
 
 ---
 
-## 📸 Application Preview
+## 📸 Application Preview (Bento Grid UI)
 
-| **Interactive AI Dashboard & Spend Forecast** | **Clean Modern Landing Page** |
+| **Panoramic Bento Grid Intelligence Studio** | **Landing Page with Bento Feature Showcase** |
 | :---: | :---: |
 | ![PaisaPulse Dashboard](screenshots/dashboard.png) | ![PaisaPulse Homepage](screenshots/homepage.png) |
-| *Real-time KPI metrics, Category Donut chart, and Additive Trend + 80% CI Forecast.* | *Hero showcase, feature pillars, dynamic interactive playground, and 1-click demo.* |
+| *Bento telemetry cards, pure SVG Donut chart, and Additive Trend + 80% CI Horizon.* | *Hero showcase, dynamic interactive SMS sandbox, and Bento Architecture tiles.* |
 
 | **NLP & Prophet-Style Forecasting Architecture** | **Benchmarking & Latency Comparison** |
 | :---: | :---: |
